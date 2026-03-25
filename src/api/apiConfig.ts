@@ -1,1 +1,3 @@
-export const OPENWEATHER_API_KEY = process.env.OPEN_WEATHER_API_KEY;
+import { OPEN_WEATHER_API_KEY } from '@env';
+
+export const OPENWEATHER_API_KEY = OPEN_WEATHER_API_KEY;

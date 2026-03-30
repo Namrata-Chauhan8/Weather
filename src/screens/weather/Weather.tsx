@@ -115,16 +115,13 @@ const Weather = () => {
         // iOS 13+: native keyboard inset adjustment (most reliable on iOS)
         automaticallyAdjustKeyboardInsets={Platform.OS === 'ios' ? true : false}
       >
-        <Text style={[styles.title, { color: theme.text }]}>Weather</Text>
-        <Text style={[styles.subtitle, { color: theme.textMuted }]}>
-          Search by city
-        </Text>
+        <Text style={[styles.title, { color: theme.text }]}>Cloud Cast</Text>
 
         <View style={[styles.searchRow, { backgroundColor: theme.surface }]}>
           <TextInput
             value={query}
             onChangeText={setQuery}
-            placeholder="City name"
+            placeholder="Search by city name"
             placeholderTextColor={theme.textMuted}
             style={[styles.input, { color: theme.text }]}
             onSubmitEditing={handleSearch}
@@ -235,6 +232,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: '700',
     letterSpacing: -0.5,
+    marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
